@@ -14,7 +14,7 @@
     .sidebar{position:sticky;top:24px;height:calc(100vh - 48px);align-self:start;background:rgba(255,255,255,.92);backdrop-filter:blur(14px);border:1px solid rgba(23,107,82,.13);border-radius:28px;padding:22px;box-shadow:var(--shadow);display:flex;flex-direction:column;overflow:auto}
     .brand{display:flex;align-items:center;gap:12px;padding:4px 4px 18px;border-bottom:1px solid var(--line)}.brand-mark{width:52px;height:52px;border-radius:18px;background:linear-gradient(145deg,var(--forest),var(--cyan));display:grid;place-items:center;color:#fff;font-size:25px;font-weight:900;box-shadow:0 8px 20px rgba(23,107,82,.22)}.brand strong{font-size:18px;line-height:1.3}.brand span{display:block;font-size:13px;color:var(--muted);font-weight:700;margin-top:3px}
     .toc-title{font-size:13px;letter-spacing:.08em;color:var(--forest);font-weight:900;margin:20px 8px 8px}.toc{display:grid;gap:5px}.toc a{display:flex;align-items:center;gap:10px;padding:10px 12px;border-radius:12px;color:var(--ink);text-decoration:none;font-weight:750;font-size:15px;line-height:1.3}.toc a:hover,.toc a.active{background:var(--mint);color:var(--forest-dark)}.toc b{flex:0 0 28px;height:28px;display:grid;place-items:center;border-radius:9px;background:#f2f8f5;color:var(--forest);font-size:13px}
-    .padlet{margin-top:auto;display:flex;align-items:center;gap:12px;padding:14px;border:2px solid #e5e2ff;border-radius:17px;background:linear-gradient(135deg,#fff,#f7f5ff);color:#241f5c;text-decoration:none;font-weight:900;box-shadow:0 8px 20px rgba(76,64,170,.1)}.padlet:hover{transform:translateY(-2px)}.padlet-logo{width:40px;height:40px;border-radius:12px;background:#1f1647;color:#fff;display:grid;place-items:center;font-size:22px;position:relative}.padlet-logo:after{content:"";position:absolute;right:-3px;top:-3px;width:11px;height:11px;border-radius:50%;background:#ffcb45;border:3px solid #fff}.padlet small{display:block;font-weight:650;color:#655f82;font-size:12px}
+    .padlet{margin-top:14px;display:flex;align-items:center;gap:12px;padding:14px;border:2px solid #e5e2ff;border-radius:17px;background:linear-gradient(135deg,#fff,#f7f5ff);color:#241f5c;text-decoration:none;font-weight:900;box-shadow:0 8px 20px rgba(76,64,170,.1)}.padlet:hover{transform:translateY(-2px)}.padlet-logo{width:40px;height:40px;border-radius:12px;background:#1f1647;color:#fff;display:grid;place-items:center;font-size:22px;position:relative}.padlet-logo:after{content:"";position:absolute;right:-3px;top:-3px;width:11px;height:11px;border-radius:50%;background:#ffcb45;border:3px solid #fff}.padlet small{display:block;font-weight:650;color:#655f82;font-size:12px}
     main{min-width:0}.hero{position:relative;overflow:hidden;background:linear-gradient(135deg,#0c513f,#17785c 55%,#208f7b);color:#fff;border-radius:34px;padding:54px 56px 46px;box-shadow:0 24px 70px rgba(12,74,58,.22)}.hero:before,.hero:after{content:"";position:absolute;border-radius:50%;background:rgba(255,255,255,.09)}.hero:before{width:290px;height:290px;right:-85px;top:-120px}.hero:after{width:160px;height:160px;right:140px;bottom:-110px}.eyebrow{display:inline-flex;gap:9px;align-items:center;padding:8px 14px;border:1px solid rgba(255,255,255,.35);border-radius:99px;background:rgba(255,255,255,.11);font-size:14px;font-weight:800;letter-spacing:.03em}.eyebrow i{width:9px;height:9px;border-radius:50%;background:#ffd56f}.hero h1{max-width:920px;margin:22px 0 16px;font-size:clamp(1.8rem,3.4vw,3.7rem);line-height:1.14;letter-spacing:-.04em}.hero h1 em{display:block;color:#ffe08a;font-style:normal}.hero p{max-width:760px;margin:0;color:#e8fff6;font-size:clamp(1.02rem,1.4vw,1.25rem);font-weight:600}.hero-meta{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}.hero-meta span{padding:9px 13px;border-radius:12px;background:rgba(255,255,255,.12);font-size:14px;font-weight:750}
     .notice{margin:24px 0 34px;padding:20px 22px;border-radius:20px;background:#fff7d9;border:1px solid #f4d985;display:flex;gap:15px;align-items:flex-start}.notice-icon{flex:0 0 38px;height:38px;border-radius:13px;background:var(--gold);display:grid;place-items:center;font-size:20px}.notice strong{display:block;color:#714f00;font-size:18px}.notice p{margin:2px 0 0;color:#705f31}
     .chapter{scroll-margin-top:24px;margin:54px 0}.chapter-head{display:flex;gap:16px;align-items:center;margin-bottom:20px}.chapter-no{flex:0 0 52px;height:52px;border-radius:17px;background:linear-gradient(145deg,var(--forest),#239377);color:#fff;display:grid;place-items:center;font-size:22px;font-weight:900;box-shadow:0 8px 18px rgba(23,107,82,.18)}.chapter h2{margin:0;font-size:clamp(1.65rem,2.4vw,2.35rem);line-height:1.18;letter-spacing:-.035em}.chapter-intro{margin:4px 0 0;color:var(--muted)}
@@ -36,6 +36,56 @@
       <div class="brand"><div class="brand-mark">AI</div><div><strong>국원유치원<br>프롬프트 가이드</strong><span>2026. 09. 08.</span></div></div>
       <div class="toc-title">간단 목차</div>
       <nav class="toc"><a href="#chapter-0"><b>0</b>좋은 프롬프트</a><a href="#chapter-1"><b>1</b>문서 만들기</a><a href="#chapter-2"><b>2</b>이미지 만들기</a><a href="#chapter-3"><b>3</b>영상 만들기</a><a href="#chapter-4"><b>4</b>노래 만들기</a><a href="#chapter-5"><b>5</b>동화구연 PPT</a><a href="#chapter-6"><b>6</b>검토 체크리스트</a></nav>
+      <div class="instructor-card" style="font-family:Arial,'Malgun Gothic';color:#17213a;width:100%;max-width:100%;border:1px solid #cbd2de;border-radius:11px;overflow:hidden;background:#fff;margin-top:16px;flex:0 0 auto">
+        <div style="height:5px;background:#d3ad52"></div>
+        <div style="padding:14px 12px;background:#102653">
+          <table style="width:100%;border-collapse:collapse"><tr>
+            <td style="padding-right:10px;width:76px;vertical-align:middle">
+              <img src="https://cdn.imweb.me/upload/S2017031458c7abc782f2d/4df5f3608cf4e.jpg" width="68" height="68" style="border:3px solid #e3bd61;border-radius:50%;object-fit:cover;display:block" loading="lazy" alt="김유성 강사">
+            </td>
+            <td style="vertical-align:middle">
+              <div style="color:#ffe39a;font-size:11px;font-weight:bold;line-height:1.35">AI콘텐츠마케팅연구소</div>
+              <div style="color:#fff;font-size:20px;font-weight:bold;line-height:1.25">유쌤클래스</div>
+              <div style="margin-top:5px;padding-top:5px;border-top:1px solid #7184a9;color:#fff;font-size:13px;line-height:1.45"><b>대표 · 강사 김유성</b><br><span style="color:#d9e0ed;font-size:11px">Kim Yu Seong</span></div>
+            </td>
+          </tr></table>
+        </div>
+
+        <div style="padding:9px 11px 3px">
+          <div style="padding:8px 9px;background:#f3f6fb;border-left:4px solid #d3ad52;font-size:11px;line-height:1.55">
+            <b style="color:#102653;font-size:13px">교육분야</b><br>
+            AI인공지능 · 콘텐츠제작 · 온라인마케팅 · 미디어 리터러시 · 퍼스널브랜딩 · 책출판 · 미디어창작 · 브랜드컨설팅
+          </div>
+        </div>
+
+        <div style="padding:3px 11px">
+          <div style="padding:8px 9px;background:#f3f6fb;border-left:4px solid #4771a9;font-size:11px;line-height:1.55">
+            <b style="color:#102653;font-size:13px">교육대상</b><br>
+            정부·지자체·공공기관 임직원 · 공무원 · 교사 · 청소년 · 중소기업 임직원 · 신입사원 · 취업준비생 · 1인기업인
+          </div>
+        </div>
+
+        <div style="padding:6px 12px;font-size:11px;line-height:1.7;overflow-wrap:anywhere">
+          <b style="color:#102653;font-size:13px">강의 및 협업 문의</b><br>
+          <a href="tel:01027819669" style="color:#17213a;text-decoration:none">010-2781-9669</a> ·
+          <a href="tel:050713119669" style="color:#17213a;text-decoration:none">0507-1311-9669</a><br>
+          <a href="mailto:kyseong3@naver.com" style="color:#17213a;text-decoration:none">kyseong3@naver.com</a><br>
+          <a href="https://www.yussamclass.com" style="color:#876319;text-decoration:none" rel="noreferrer noopener" target="_blank">www.yussamclass.com</a>
+        </div>
+
+        <div style="padding:3px 12px 13px">
+          <div style="margin-bottom:7px;color:#102653;font-size:12px;font-weight:bold">SNS 채널</div>
+          <div style="display:flex;flex-wrap:wrap;gap:5px;align-items:center">
+            <a href="https://www.yussamclass.com" rel="noreferrer noopener" target="_blank"><img src="https://cdn.imweb.me/upload/S2017031458c7abc782f2d/db109298c1c0e.png" width="24" height="24" loading="lazy" alt="유쌤클래스"></a>
+            <a href="https://blog.naver.com/mindlemedia" rel="noreferrer noopener" target="_blank"><img src="https://cdn.imweb.me/upload/S2017031458c7abc782f2d/e38ab291f5b3d.png" width="24" height="24" loading="lazy" alt="네이버 블로그"></a>
+            <a href="https://www.youtube.com/c/kyseong3" rel="noreferrer noopener" target="_blank"><img src="https://cdn.imweb.me/upload/S2017031458c7abc782f2d/7716e23aacee7.png" width="24" height="24" loading="lazy" alt="유튜브"></a>
+            <a href="https://www.instagram.com/yussamclass" rel="noreferrer noopener" target="_blank"><img src="https://cdn.imweb.me/upload/S2017031458c7abc782f2d/39127e5032943.png" width="24" height="24" loading="lazy" alt="인스타그램"></a>
+            <a href="https://www.facebook.com/dandelionmedia1004" rel="noreferrer noopener" target="_blank"><img src="https://cdn.imweb.me/upload/S2017031458c7abc782f2d/47d6af62e63d6.png" width="24" height="24" loading="lazy" alt="페이스북"></a>
+            <a href="https://www.threads.com/@yussamclass" rel="noreferrer noopener" target="_blank"><img src="https://cdn.imweb.me/upload/S2017031458c7abc782f2d/51b3b1e1118b8.png" width="24" height="24" loading="lazy" alt="스레드"></a>
+            <a href="https://open.kakao.com/o/gLAE28ui" rel="noreferrer noopener" target="_blank"><img src="https://cdn.imweb.me/upload/S2017031458c7abc782f2d/ee583ebc6add0.png" width="24" height="24" loading="lazy" alt="카카오 오픈채팅"></a>
+          </div>
+        </div>
+      </div>
       <a class="padlet" href="https://padlet.com/yu_ssam/76" target="_blank" rel="noopener"><span class="padlet-logo">P</span><span>Padlet<small>스터디 게시판 열기 ↗</small></span></a>
     </aside>
     <main id="main">
